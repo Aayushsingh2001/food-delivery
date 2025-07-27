@@ -105,3 +105,22 @@ const connectDB = async ()=>{
 export default connectDB;
 
 8. 
+
+
+
+Admin
+------
+create frontend for Admin using react.
+pakages : npm i axios react-tostify react-router-dom
+
+
+
+
+
+skills: react vite@latest - for frontend
+        node js  - for backend
+        mongoDB  - for database
+        thunder client - api testing
+        postman   - api testing
+        github   - for pushing to our repository
+        
