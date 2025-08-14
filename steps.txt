@@ -113,7 +113,7 @@ Admin
 create frontend for Admin using react.
 pakages : npm i axios react-tostify react-router-dom
 
-8:45 min resume>>>>>>>>>>>>>>>>>>
+9:17 min resume>>>>>>>>>>>>>>>>>>
 
 
 
