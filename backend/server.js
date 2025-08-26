@@ -33,3 +33,4 @@ app.listen(port, ()=>{
     console.log(`Server Started on http://localhost:${port}`);
 })
 
+//mongodb+srv://codewithaayu:codewithaayu@fooddelivery.khmagic.mongodb.net/?retryWrites=true&w=majority&appName=FoodDelivery
