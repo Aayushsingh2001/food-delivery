@@ -1,0 +1,31 @@
+---
+# tasks file for ec2_launch
+- name: Launch EC2 instance
+  amazon.aws.ec2_instance:
+    region: "us-east-1"
+    name: " my-ansible-ec2 "
+    key_name: "aayushvm"
+    instance_type: "t2.micro"
+    image_id: "ami-0861f4e788f5069dd"
+    vpc_subnet_id: "vpc-0c1af3c357b73203e"
+    security_group: "sg-0f9de295ac99bcf75"
+    wait: yes
+    count: 1
+    tags:
+      Environment: "dev"
+      Project: "food-delivery"
+  register: ec2_instance
+
+- name: Add new instance to inventory
+  ansible.builtin.add_host:
+    name: "{{ item.public_ip_address }}"
+    groups: launched
+  loop: "{{ ec2_instance.instances }}"
+
+- name: Wait for SSH to become available
+  ansible.builtin.wait_for:
+    host: "{{ item.public_ip_address }}"
+    port: 22
+    delay: 10
+    timeout: 300
+  loop: "{{ ec2_instance.instances }}"
