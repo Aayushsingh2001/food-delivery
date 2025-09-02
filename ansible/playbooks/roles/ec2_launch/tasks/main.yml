@@ -2,7 +2,7 @@
 # tasks file for ec2_launch
 - name: Launch EC2 instance
   amazon.aws.ec2_instance:
-    region: "us-east-1"
+    region: "ap-south-1"
     name: " my-ansible-ec2 "
     key_name: "aayushvm"
     instance_type: "t2.micro"
