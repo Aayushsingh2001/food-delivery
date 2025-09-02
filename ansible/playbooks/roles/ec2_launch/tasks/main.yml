@@ -9,7 +9,7 @@
     image_id: "ami-0861f4e788f5069dd"
     vpc_subnet_id: "subnet-002938e227dd3439a"
     security_group: "sg-0f9de295ac99bcf75"
-    wait: yes
+    wait: true
     count: 1
     tags:
       Environment: "dev"
