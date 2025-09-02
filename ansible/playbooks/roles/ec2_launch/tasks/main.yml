@@ -7,7 +7,7 @@
     key_name: "aayushvm"
     instance_type: "t2.micro"
     image_id: "ami-0861f4e788f5069dd"
-    vpc_subnet_id: "vpc-0c1af3c357b73203e"
+    vpc_subnet_id: "subnet-002938e227dd3439a"
     security_group: "sg-0f9de295ac99bcf75"
     wait: yes
     count: 1
