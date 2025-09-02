@@ -4,7 +4,7 @@
   amazon.aws.ec2_instance:
     region: "ap-south-1"
     name: " my-ansible-ec2 "
-    key_name: "aayushvm"
+    key_name: "aayu-test-codonix"
     instance_type: "t2.micro"
     image_id: "ami-0861f4e788f5069dd"
     vpc_subnet_id: "subnet-002938e227dd3439a"
