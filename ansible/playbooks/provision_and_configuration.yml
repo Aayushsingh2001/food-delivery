@@ -5,11 +5,8 @@
   roles:
     - ec2_launch
   
-# - name: Configuration of Ec2 instances
-#   hosts: launched_ec2_instances
-#   gather_facts: true
-#   roles:
-#     - common
-#     - admin
-#     - frontend
-#     - backend
+- name: Configuration of Ec2 instances
+  hosts: launched_ec2_instances
+  gather_facts: true
+  roles:
+    - frontend
