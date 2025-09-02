@@ -1,8 +1,5 @@
 ---
 # tasks file for frontend
-#SPDX-License-Identifier: MIT-0
----
-# tasks file for frontend
 - name: Install frontend dependencies
   become: true #yes
   npm:
