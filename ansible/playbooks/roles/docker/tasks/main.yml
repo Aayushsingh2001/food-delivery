@@ -47,6 +47,6 @@
   community.docker.docker_compose_v2:
     project_src: /opt/food-delivery
     state: present
-    build: yes
+    build: always
   become: true
 
