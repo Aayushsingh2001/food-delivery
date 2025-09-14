@@ -9,5 +9,7 @@
   hosts: launched_ec2_instances
   gather_facts: true
   roles:
+    - common
+    - admin
     - frontend
     - backend

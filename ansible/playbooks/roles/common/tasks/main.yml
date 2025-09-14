@@ -1,2 +1,23 @@
 ---
 # tasks file for common
+- name: Install common packages
+  become: true
+  pakage:
+    name: "{{ item.pk_name}}"
+    state: present
+  with_items: "{{ pakage_names}}"
+
+- name: Copy Source Code
+  bacome: true
+  syncronize:
+    src: "{{ playbook_dir}}/../../"
+    dest: "/opt/food-delivery"
+    delete: yes
+    recursive: yes
+    rsync_opts:
+      - "--exclude=.git"
+      - "--exclude=.github"
+      - "--exclude=ansible"
+     
+
+     
