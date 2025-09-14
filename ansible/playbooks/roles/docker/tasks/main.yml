@@ -1,6 +1,6 @@
 ---
 # tasks file for docker
-- name: Start and enable socker service
+- name: Start and enable Docker service
   service:
     name: docker
     state: started
@@ -47,5 +47,6 @@
   community.docker.docker_compose_v2:
     project_src: /opt/food-delivery
     state: present
+    build: yes
   become: true
 
