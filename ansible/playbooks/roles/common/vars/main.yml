@@ -6,7 +6,7 @@ apache_package_name:
 node_package_name:
   Amazon: nodejs
   Ubuntu: node_package_name
-package_name:
+package_names:
   - pk_name: "{{ apache_package_name[ansible_destribution ]}}"
   - pk_name: "{{ node_package_name[ansible_destribution ]}}"
   - pk_name: git
