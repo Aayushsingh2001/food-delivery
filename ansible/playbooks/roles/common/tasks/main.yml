@@ -9,7 +9,7 @@
 
 - name: Copy Source Code
   bacome: true
-  syncronize:
+  synchronize:
     src: "{{ playbook_dir}}/../../"
     dest: "/opt/food-delivery"
     delete: yes
