@@ -10,6 +10,7 @@
   gather_facts: true
   roles:
     - common
-    - admin
-    - frontend
-    - backend
+    - docker
+    # - admin
+    # - frontend
+    # - backend
