@@ -5,7 +5,7 @@
   package:
     name: "{{ item.pk_name}}"
     state: present
-  with_items: "{{ pakage_names}}"
+  with_items: "{{ package_names }}"
 
 - name: Copy Source Code
   become: true
