@@ -1,7 +1,7 @@
 ---
 # vars file for common
 apache_package_name:
-  Ubuntu: apache2
+  Ubuntu: nginx
   Amazon: httpd
 node_package_name:
   Amazon: nodejs
