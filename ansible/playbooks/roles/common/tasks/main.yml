@@ -8,7 +8,7 @@
   with_items: "{{ pakage_names}}"
 
 - name: Copy Source Code
-  bacome: true
+  become: true
   synchronize:
     src: "{{ playbook_dir}}/../../"
     dest: "/opt/food-delivery"
