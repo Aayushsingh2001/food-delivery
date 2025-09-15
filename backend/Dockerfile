@@ -5,6 +5,6 @@ COPY package.json .
 RUN npm install
 COPY . .
 
-EXPOSE 3003
+EXPOSE 4000
 ENTRYPOINT [ "node"]
 CMD [ "server" ]
