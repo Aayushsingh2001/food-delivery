@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install 
 COPY . .
-RUN npm run dist
+RUN npm run build
 
 FROM nginx:alpine-slim
 WORKDIR /usr/share/nginx/html
