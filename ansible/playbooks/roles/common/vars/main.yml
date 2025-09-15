@@ -6,9 +6,13 @@ apache_package_name:
 node_package_name:
   Amazon: nodejs
   Ubuntu: node_package_name
+npm_package_name:
+  Amazon: npm
+  Ubuntu: npm
 package_names:
   - pk_name: "{{ apache_package_name[ansible_distribution ]}}"
   - pk_name: "{{ node_package_name[ansible_distribution ]}}"
+  - pk_name: "{{ npm_package_name[ansible_distribution ]}}"
   - pk_name: git
   - pk_name: docker
 

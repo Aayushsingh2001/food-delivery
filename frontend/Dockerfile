@@ -4,7 +4,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install && npm rebuild esbuild
 COPY . .
-RUN chmod +x node_modules/.bin/vite
 RUN npm run build
 
 FROM nginx:alpine-slim
