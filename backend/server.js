@@ -9,7 +9,7 @@ import orderRouter from './routes/orderRoute.js';
 
 // aap config
 const app = express();
-const port = 4000
+const port = 3003
 
 // middleware
 app.use(express.json())
@@ -33,4 +33,3 @@ app.listen(port, ()=>{
     console.log(`Server Started on http://localhost:${port}`);
 })
 
-//mongodb+srv://codewithaayu:codewithaayu@fooddelivery.khmagic.mongodb.net/?retryWrites=true&w=majority&appName=FoodDelivery
