@@ -45,8 +45,7 @@
 
 - name: Run Docker Compose
   community.docker.docker_compose_v2:
-    project_src: /opt/food-delivery/docker compose up --build -d
+    project_src: /opt/food-delivery
     state: present
-    build: always
   become: true
 
