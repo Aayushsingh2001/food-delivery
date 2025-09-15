@@ -7,7 +7,7 @@
     enabled: true
   become: true
 
-- name: Create Docker ClI plugin directory
+- name: Create Docker CLI plugin directory
   file:
     path: /usr/local/lib/docker/cli-plugins
     state: directory
@@ -26,7 +26,7 @@
 
 - name: Install Docker Compose /usr/local/lib/docker/cli-plugins
   get_url:
-    url: "https://github.com/docker/compose/releases/download/{{ docker_compose_version }}/docker-compose-{{ ansible_system }}-{{ ansible_architecture }}"
+    url: "https://github.com/docker/compose/releases/download/ {{ docker_compose_version }}/docker-compose-{{ ansible_system }}-{{ ansible_architecture }}"
     dest: /usr/local/lib/docker/cli-plugins/docker-compose
     mode: '0755'
   become: true
