@@ -43,13 +43,9 @@
     append: yes
   become: true
 
-# - name: Run Docker Compose
-#   community.docker.docker_compose_v2:
-#     project_src: /opt/food-delivery
-#     state: present
-#   become: true
-
 - name: Run Docker Compose
-  command: docker compose up --build -d
-  args:
-    chdir: /opt/food-delivery
+  community.docker.docker_compose_v2:
+    project_src: /opt/food-delivery
+    state: present
+  become: true
+
