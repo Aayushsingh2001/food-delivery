@@ -47,5 +47,6 @@
   community.docker.docker_compose_v2:
     project_src: /opt/food-delivery
     state: present
+  command: docker compose up --build -d
   become: true
 
