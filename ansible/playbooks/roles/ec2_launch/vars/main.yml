@@ -12,5 +12,5 @@ security_group_rules:
     ports: [22, 80, 443]
     cidr_ip: 0.0.0.0/0
   - proto: tcp
-    ports: [4000]
+    ports: [3003]
     cidr_ip: 0.0.0.0/0
