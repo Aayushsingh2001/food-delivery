@@ -2,7 +2,7 @@
 # vars file for ec2_launch
 aws_region: ap-south-1
 ec2_instance_type: t2.micro
-ec2_ami_id: ami-0861f4e788f5069dd
+ec2_ami_id: ami-0b982602dbb32c5bd
 ec2_key_name: aayu-test-codonix
 ec2_instance_count: 1
 ec2_ssh_user: ec2-user
