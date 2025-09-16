@@ -52,6 +52,9 @@ jobs:
       AWS_SECRET_ACCESS_KEY_ID:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       EC2_SSH_KEY_PATH: ~/.ssh/ec2_key.pem
       ANSIBLE_HOST_KEY_CHECKING: False
+      STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+      MONGO_URL: ${{ secrets.MONGO_URL }}
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
 
 

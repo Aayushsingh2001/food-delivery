@@ -16,10 +16,6 @@ services:
     build: ./backend
     ports:
       - "4000:4000"
-    environment:
-      - STRIPE_SECRET_KEY=${{ secrets.STRIPE_SECRET_KEY }}
-      - MONGO_URL=${{ secrets.MONGO_URL }}
-      - JWT_SECRET=${ secrets.JWT_SECRET }}
     networks:
       - network
 
