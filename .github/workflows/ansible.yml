@@ -41,6 +41,12 @@ jobs:
    - name: Debug SSH key
      run : ls -l ~/.ssh/ec2_key.pem
 
+   - name: Create .env file
+     run: |
+      echo "MONGO_URL=${{ secrets.MONGO_URL }}" >> backend/.env
+      echo "STRIPE_SECRET_KEY=${{ secrets.STRIPE_SECRET_KEY }}" >> backend/.env
+      echo "JWT_SECRET=${{ secrets.JWT_SECRET }}" >> backend/.env
+
    - name: Run Ansible Playbook for deploying backend
      run : |
       ansible-playbook \
@@ -52,9 +58,6 @@ jobs:
       AWS_SECRET_ACCESS_KEY_ID:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       EC2_SSH_KEY_PATH: ~/.ssh/ec2_key.pem
       ANSIBLE_HOST_KEY_CHECKING: False
-      STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
-      MONGO_URL: ${{ secrets.MONGO_URL }}
-      JWT_SECRET: ${{ secrets.JWT_SECRET }}
 
 
 
