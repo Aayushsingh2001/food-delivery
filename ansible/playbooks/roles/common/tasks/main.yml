@@ -18,8 +18,5 @@
       - "--exclude=.git"
       - "--exclude=.github"
       - "--exclude=ansible"
-      - "--exclude=admin"
-      - "--exclude=frontend"
-
 
      

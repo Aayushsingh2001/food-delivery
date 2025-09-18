@@ -9,6 +9,7 @@ node_package_name:
 package_names:
   - pk_name: "{{ apache_package_name[ansible_distribution ]}}"
   - pk_name: "{{ node_package_name[ansible_distribution ]}}"
+  - pk_name: mongo
   - pk_name: git
   - pk_name: docker
 
