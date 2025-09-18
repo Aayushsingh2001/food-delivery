@@ -5,12 +5,17 @@ services:
       - "5174:80"
     networks:
       - network
+    depends_on:
+      - backend
+
   frontend:
     build: ./frontend
     ports:
       - "5173:80"
     networks:
       - network
+    depends_on:
+      - backend
 
   backend:
     build: ./backend
