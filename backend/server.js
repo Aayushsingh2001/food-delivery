@@ -29,7 +29,7 @@ app.get('/', (req, res)=>{
     res.send("API is Working !")
 })
 
-app.listen(port, ()=>{
+app.listen(port, '0.0.0.0', ()=>{
     console.log(`Server Started on http://localhost:${port}`);
 })
 
